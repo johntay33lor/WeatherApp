@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="weather.css">
+	<script src="https://api.openweathermap.org/data/2.5/weather?zip=28273,US&appid=5436ffa063824720ac4de298ba9f0527&units=imperial"></script>
+	<title>Weather App</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="search">
+			<input type="text" placeholder="Enter Zip Code">
+			<button><img src="search.png"></button>
+		</div>
+		<div class="error">
+			<p  style="color:rgba(255, 255, 255, 0.58);">Invalid Zip Code</p>
+		</div>
+		<div class="weather">
+			<img src="day.svg" class="icon">
+			<h2 class="city">Charlotte</h2>
+			<h2 class="temperatureHigh">High: 82°F</h2>
+			<h1 class="temperatureCurrent">Now: 65°F</h1>
+			<h2 class="temperatureLow">Low: 0°F</h2>
+			<h2 class="currentDay">Monday</h2>
+			<h2 class="currentYear">2023</h2>
+			<div class="details">
+				<div class="col">
+					<img src="wind.png" alt="wind">
+					<div>
+						<p class="windSpeed">8 mph</p>
+						<p  style="color:rgba(255, 255, 255, 0.58);">Wind Speed</p>
+					</div>
+				</div>
+				<div class="col">
+					<div>
+						<p class="feelsLike">60°F</p>
+						<p style="color:rgba(255, 255, 255, 0.58);">Feels Like</p>
+					</div>
+				</div>
+				<div class="col">
+					<img src="humidity.png" alt="humidity">
+					<div>
+						<p class="humidity">25%</p>
+						<p style="color:rgba(255, 255, 255, 0.58);">Humidity</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+	<script src="weather.js"></script>
+</body>
+
+</html>
