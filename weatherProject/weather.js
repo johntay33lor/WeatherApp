@@ -27,18 +27,18 @@ async function getWeather(zip){
     document.querySelector(".currentYear").innerHTML = new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'});
 	
 	if (data.weather[0].main == "Clouds"){
-		icon.src = "animated/cloudy-day-1.svg";
+		icon.src = "cloudy-day-1.svg";
 	} else if (data.weather[0].main == "Clear"){
-		icon.src = "animated/day.svg";
+		icon.src = "day.svg";
 	}
 	else if (data.weather[0].main == "Rain"){
-		icon.src = "animated/rainy-7.svg";
+		icon.src = "rainy-7.svg";
 	}
 	else if (data.weather[0].main == "Snow"){
-		icon.src = "animated/snowy-1.svg";
+		icon.src = "snowy-1.svg";
 	}
 	else if (data.weather[0].main == "Drizzle"){
-		icon.src = "animated/rainy-4.svg";
+		icon.src = "rainy-4.svg";
 	}
 	
 	document.querySelector(".weather").style.display = "block";
